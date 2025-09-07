@@ -12,6 +12,8 @@ A simple web-based clone of Instagram's user interface, built with HTML, CSS, an
 - **Bottom Navigation**: Quick access to main sections
 - **Interactive Elements**: Like animations, dropdown menus, and smooth scrolling
 
+# Note:
+- I created this project just for fun . The code works, but it’s not written in a production-level structure or for actual use 😅. 
 ## Technologies Used
 
 - **HTML5**: Structure and semantic markup
@@ -38,8 +40,8 @@ A simple web-based clone of Instagram's user interface, built with HTML, CSS, an
 ├── asset/
 │   ├── css/
 │   │   ├── style.css       # Main styles
-│   │   ├── post.css        # Post-specific styles
-│   │   └── search.css      # Search page styles
+│   │   └── post.css        # Post-specific styles
+│   │  
 │   ├── js/
 │   │   ├── home.js         # Home page functionality
 │   │   ├── bottomSheet.js  # Bottom navigation
@@ -59,7 +61,7 @@ A simple web-based clone of Instagram's user interface, built with HTML, CSS, an
 - Dropdown menu for account options
 
 ### Stories
-- Video playback with controls
+- Auto Play 
 - Comment input field
 - Close button functionality
 
