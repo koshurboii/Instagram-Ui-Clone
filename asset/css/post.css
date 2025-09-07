@@ -1,0 +1,98 @@
+.feedMain {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+   
+    flex: 1;
+   gap: 2px;
+    overflow-y: auto;
+    scrollbar-width: none;
+    align-items: center;
+    justify-content: center;
+    -ms-overflow-style: none;
+}
+@media (max-width: 600px) {
+    .feedMain {
+   
+        height: 500px;
+    }
+    
+}
+.feedMain::-webkit-scrollbar {
+    display: none; /* Safari and Chrome */
+}
+
+
+.post {
+    background-color: #fff;
+  
+}
+
+
+.heart-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0); /* Start at scale 0 */
+    font-size: 80px;
+    opacity: 0;
+    color: #ff2d55;
+
+    user-select: none;
+    pointer-events: none; /* Prevents the heart from interfering with clicks */
+}
+.addliked{
+animation: like-animation 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+
+
+}
+/* Keyframes for the love animation */
+@keyframes like-animation {
+    0% { transform: translate(-50%, -50%) scale(0); opacity: 0; }
+    15% { transform: translate(-50%, -50%) scale(1.2); opacity: 0.9; }
+    30% { transform: translate(-50%, -50%) scale(0.95); opacity: 0.9; }
+    45%, 80% { transform: translate(-50%, -50%) scale(1); opacity: 0.9; }
+    100% { transform: translate(-50%, -50%) scale(1); opacity: 0; }
+}
+
+
+.post-header {
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    cursor: pointer;
+
+}
+
+.post-header img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin-right: 12px;
+    cursor: pointer;
+}
+
+.post-header .username {
+    font-weight: 600;
+}
+
+.post-image img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+   user-select: none;
+   
+
+}
+.loadMore{
+    border: none;
+    padding: 8px;
+    height: 50px;
+    width: 120px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+.loadMore:hover{
+    transform: scale(1.1);
+    
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram UI Clone</title>
+    <link rel="stylesheet" href="asset/css/style.css">
+</head>
+<body>
+<div class="main">
+
+    <img class="logo" src="./asset/favicon.png" alt="logo">
+
+
+</div>
+<div class="branding">
+
+<h5>Instagram UI Clone</h5>
+<p>Made with ❤️ by koshurboii</p>
+</div>
+<script>
+   window.onload = function(){
+      // Set flag in localStorage to indicate user has visited splash screen
+      localStorage.setItem('fromSplash', 'true');
+
+   setTimeout(function(){
+
+window.location.replace("./home/");
+     }, 2000);
+
+   };
+
+
+</script>
+</body>
+</html>

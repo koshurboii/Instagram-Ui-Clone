@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="shortcut icon" href="../asset/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../asset/css/style.css">
+    <link rel="stylesheet" href="../asset/css/post.css">
+</head>
+<body>
+<script>
+   // Check if user has visited splash screen
+   if (!localStorage.getItem('fromSplash')) {
+      // If not, redirect to splash screen
+      window.location.href = '../';
+   }else{
+      // If yes, remove the flag for future visits
+      localStorage.removeItem('fromSplash');
+   }
+</script>
+
+        <div class="container">
+            <!-- Navigation bar containing logo and menu -->
+            
+            <div class="navbar">
+                
+                  <div class="dropdown">
+                   <h2 id="logo">Instagram Clone </h2>
+
+                 <div class="drop-down-c" id="drop-down-c">
+                     <a href="#" class="d-a"><p>Followers</p></a>
+                     <a href="#" class="d-a"><p>Favorites</p></a>
+
+                 </div>
+            
+                </div>
+                <div  class="left-tab"> 
+                    <img src="../asset/image/love.png" alt="likes" class="tab">
+                    <img src="../asset/image/message.png" alt="message" class="tab">
+             
+               </div>
+        
+            </div>
+           <!-- End of navigation bar -->
+            <!-- Story section showing user stories horizontally scrollable -->
+            <div class="scroll" id="scroll">
+            <div class="profile"  >
+                <img src="../asset/favicon.png" style="border: none"  alt="profile" > 
+                <p>Your Story</p>
+
+            </div>
+          
+          
+
+
+            
+          </div>
+           <!-- End of story section -->
+            <!-- Feed section displaying posts -->
+           <div class="feedMain" id="feedMain">
+            <!-- Default post example -->
+<div class="post" id="defaultPost">
+          <div class="post-header">
+            <img src="../asset/favicon.png" alt="user profile">
+            <span class="username">koshurboii</span>
+        </div>
+        <div class="post-image" id="defaultPost">
+            <img src="../asset/favicon.png" alt="post image">
+            <span class="heart-icon">❤️</span>
+        </div>
+        <div class="post-actions" style="padding: 8px 12px;">
+            <img src="../asset/image/love.png" alt="like" class="tab" style="width: 24px; height: 24px; margin-right: 12px;">
+            <img src="../asset/image/comment.png" alt="comment" class="tab" style="width: 24px; height: 24px; margin-right: 12px;">
+            <img src="../asset/image/message.png" alt="share" class="tab" style="width: 24px; height: 24px;">
+        </div>
+        <div class="post-description" style="padding: 0 12px 12px;">
+            <p><strong>koshurboii</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum autem cum amet ?</p>
+        </div>
+         
+
+</div> 
+           </div>
+ <!-- End of feed section -->
+                <!-- Bottom navigation sheet for quick access to main sections -->
+                <div class="bottom-sheet" id="bottomSheet">
+                    
+                
+
+                </div>
+               
+                <!-- End of bottom navigation sheet -->
+
+                
+ 
+
+      </div>
+      
+   
+
+
+    
+     
+ 
+<script src="../asset/js/home.js"></script>
+<script src="../asset/js/bottomSheet.js"></script>
+</body>
+</html>
